@@ -54,7 +54,9 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
@@ -63,9 +65,12 @@
     <Compile Include="BasePageElementMap.cs" />
     <Compile Include="BrowserTypes.cs" />
     <Compile Include="Driver.cs" />
+    <Compile Include="LogonPage.cs" />
+    <Compile Include="LogonPageElementMap.cs" />
     <Compile Include="MainPage.cs" />
     <Compile Include="MainPageElementMap.cs" />
-    <Compile Include="MainPageUnitTest.cs" />
+    <Compile Include="Tests\LogonPageUnitTest.cs" />
+    <Compile Include="Tests\MainPageUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

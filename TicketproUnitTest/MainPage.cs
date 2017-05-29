@@ -13,9 +13,10 @@ namespace TicketproUnitTest
         {          
         }
 
-        public void LogonLinkClick()
+        public LogonPage LogonLinkClick()
         {
             this.Map.LogonLink.Click();
+            return new LogonPage();
         }
     }
 }

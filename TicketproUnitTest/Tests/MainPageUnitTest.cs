@@ -23,7 +23,12 @@ namespace TicketproUnitTest
         {
             MainPage mainPage = new MainPage();
             mainPage.Navigate();
-            mainPage.LogonLinkClick();
+            mainPage
+                .LogonLinkClick()                
+                .SetUserName("bumble-bee83@mail.ru")
+                .SetPassword("bumblebee83")
+                .AgreeCheckBoxClick()
+                .LogonButtonClick();            
         }
     }
 }
