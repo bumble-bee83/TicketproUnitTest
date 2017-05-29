@@ -61,13 +61,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BasePage.cs" />
+    <Compile Include="Pages\BasePage.cs" />
     <Compile Include="BasePageElementMap.cs" />
     <Compile Include="BrowserTypes.cs" />
     <Compile Include="Driver.cs" />
-    <Compile Include="LogonPage.cs" />
+    <Compile Include="Pages\LogonPage.cs" />
     <Compile Include="LogonPageElementMap.cs" />
-    <Compile Include="MainPage.cs" />
+    <Compile Include="Pages\MainPage.cs" />
     <Compile Include="MainPageElementMap.cs" />
     <Compile Include="Tests\LogonPageUnitTest.cs" />
     <Compile Include="Tests\MainPageUnitTest.cs" />
