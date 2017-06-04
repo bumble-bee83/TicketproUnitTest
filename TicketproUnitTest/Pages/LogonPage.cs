@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TicketproUnitTest
 {
+    /// <summary>
+    /// Страница с формой входа
+    /// </summary>
     public class LogonPage : BasePage<LogonPageElementMap>
     {
         public LogonPage()
@@ -13,6 +16,11 @@ namespace TicketproUnitTest
         {
         }
 
+        /// <summary>
+        /// Ввод username
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
         public LogonPage SetUserName(string userName)
         {
             this.Map.UserNameInput.Clear();
@@ -20,6 +28,11 @@ namespace TicketproUnitTest
             return new LogonPage();
         }
 
+        /// <summary>
+        /// Ввод password
+        /// </summary>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public LogonPage SetPassword(string password)
         {
             this.Map.PasswordInput.Clear();
@@ -27,16 +40,24 @@ namespace TicketproUnitTest
             return new LogonPage();
         }
 
+        /// <summary>
+        /// Check argeecheckbox
+        /// </summary>
+        /// <returns></returns>
         public LogonPage AgreeCheckBoxClick()
         {
             this.Map.AgreeCheckBox.Click();
             return new LogonPage();
         }
 
-        public LogonPage LogonButtonClick()
+        /// <summary>
+        /// Click logonbutton
+        /// </summary>
+        /// <returns></returns>
+        public SearchPage LogonButtonClick()
         {
             this.Map.LogonButton.Click();
-            return new LogonPage();
+            return new SearchPage();
         }
     }
 }

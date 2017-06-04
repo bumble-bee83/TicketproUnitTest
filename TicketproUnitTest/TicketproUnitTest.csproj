@@ -61,17 +61,23 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BuyPageElementMap.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="BasePageElementMap.cs" />
     <Compile Include="BrowserTypes.cs" />
     <Compile Include="Driver.cs" />
+    <Compile Include="Pages\BuyPage.cs" />
     <Compile Include="Pages\LogonPage.cs" />
     <Compile Include="LogonPageElementMap.cs" />
     <Compile Include="Pages\MainPage.cs" />
     <Compile Include="MainPageElementMap.cs" />
-    <Compile Include="Tests\LogonPageUnitTest.cs" />
+    <Compile Include="Pages\SearchPage.cs" />
+    <Compile Include="Pages\TicketPage.cs" />
+    <Compile Include="SearchPageElementMap.cs" />
+    <Compile Include="Tests\BaseUnitTest.cs" />
     <Compile Include="Tests\MainPageUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketPageElementMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

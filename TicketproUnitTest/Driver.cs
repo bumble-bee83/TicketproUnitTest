@@ -62,6 +62,7 @@ namespace TicketproUnitTest
                 default:
                     break;
             }
+            Browser.Manage().Window.Maximize();            
             BrowserWait = new WebDriverWait(Browser, TimeSpan.FromSeconds(defaultTimeOut));
         }
 

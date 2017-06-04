@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TicketproUnitTest
 {
+    /// <summary>
+    /// Начальная страница
+    /// </summary>
     public class MainPage : BasePage<MainPageElementMap>
     {
         public MainPage()
@@ -17,6 +20,12 @@ namespace TicketproUnitTest
         {
             this.Map.LogonLink.Click();
             return new LogonPage();
+        }
+
+        public BuyPage LinkToBuyClick()
+        {
+            this.Map.LinkToBuy.Click();
+            return new BuyPage();
         }
     }
 }

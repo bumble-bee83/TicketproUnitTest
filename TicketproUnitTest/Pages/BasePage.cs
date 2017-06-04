@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace TicketproUnitTest
 {
+    /// <summary>
+    /// Базовая страница
+    /// </summary>
+    /// <typeparam name="M"></typeparam>
     public class BasePage<M>
         where M : BasePageElementMap, new()
     {
